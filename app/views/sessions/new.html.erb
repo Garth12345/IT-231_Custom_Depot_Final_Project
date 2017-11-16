@@ -1,7 +1,5 @@
 <div class="w3-container">
-    
-<h1>Create a Sessions and a Session User_ID</h1>
-<p>Find me in app/views/sessions/new.html.erb</p>
+<h1>Login</h1>
 <div class="w3-alert">
 <% if flash[:alert] %>
 <p id="notice"><%= flash[:alert] %></p>
@@ -10,7 +8,7 @@
 
 <%= form_tag do %>
 
-<legend>Please Log In</legend>
+<legend>Login to your Garth's Taco Service Account</legend>
 
 <div class="w3-panel">
 <%= label_tag :name, 'Name:' %>
@@ -23,8 +21,7 @@
 </div>
 
 <div class="w3-panel">
-<%= submit_tag "Login", class:"w3-button w3-orange w3-border" %>
+<%= submit_tag "Sign In", class:"w3-button w3-orange w3-border" %>
 </div>
-
 <% end %>
 </div>

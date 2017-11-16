@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+body {
+    background-image: url("taco_background.jpg");
+    color: black;
+    font-weight: bold;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+
+}
+
+legend {
+    color: white;
+    font-weight: bold;
+
+}

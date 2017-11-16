@@ -1,3 +1,4 @@
+
 <p id="notice" class="w3-panel"><%= notice %></p>
 
 <h1>Users</h1>
@@ -14,8 +15,8 @@
     <% @users.each do |user| %>
       <tr>
         <td><%= user.name %></td>
-        <td><%= link_to 'Show', user , class:"w3-button w3-light-blue w3-border" %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) , class:"w3-button w3-light-blue w3-border" %></td>
+        <td><%= link_to 'Show', user , class:"w3-button w3-yellow w3-border" %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) , class:"w3-button w3-yellow w3-border" %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } , class:"w3-button w3-red w3-border" %></td>
       </tr>
     <% end %>

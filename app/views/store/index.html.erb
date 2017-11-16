@@ -1,14 +1,19 @@
+<style>
+h1 {font-family: "Arial"}
+#maincontent {font-family: "Arial"}
+</style>
+
+<div id='maincontent' > 
 <p id="notice"><%= notice %></p>
 
-<h1>Garth's Amazing E-Commerce Site</h1>
-<%= link_to 'Show My Cart', cart_path(@cart) , class:"w3-button w3-light-blue w3-border" %>
-
+<h1>Garth's Taco Delivery Service Menu</h1>
+<%= link_to 'Show My Cart', cart_path(@cart) , class:"w3-button w3-orange w3-border" %> 
 <table class="w3-table-all">
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Image url</th>
+      <th>What's it called?</th>
+      <th>What's in it?</th>
+      <th>What's it look like?</th>
     </tr>
   </thead>
 
@@ -18,12 +23,16 @@
         <td><%= product.title %></td>
         <td><%= strip_tags(product.description) %></td>
         <td><%= image_tag(product.image_url) %>
+        <br>
+        <br>
+        <br>
         <%= number_to_currency(product.price) %>
-        <%= button_to 'Add to Cart', line_items_path(product_id: product), class:"w3-button w3-light-blue w3-border" %>
+        <br>
+        <%= button_to 'Add to Order', line_items_path(product_id: product), class:"w3-button w3-orange w3-border" %>
         </td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<br>
+<br></div>
