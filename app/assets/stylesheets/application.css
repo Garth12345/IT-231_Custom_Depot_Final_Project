@@ -14,19 +14,20 @@
  *= require_self
  */
 body {
+    background-color: orange;
     background-image: url("taco_background.jpg");
     color: black;
     font-weight: bold;
 }
 
 h1 {
-    color: white;
+    color: black;
     font-weight: bold;
 
 }
 
 legend {
-    color: white;
+    color: black;
     font-weight: bold;
 
 }
